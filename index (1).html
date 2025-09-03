@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="time">7:07</div>
+            <div class="status-icons">
+                <span class="icon">📶</span>
+                <span class="icon">📶</span>
+                <span class="icon">🔋</span>
+                <span class="battery">89%</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="wifi-icon">📶</div>
+            <div class="refresh-icon">🔄</div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls">
+            <div class="control-button" data-device="1">
+                <div class="power-icon">⏻</div>
+            </div>
+            <div class="control-button" data-device="2">
+                <div class="power-icon">⏻</div>
+            </div>
+            <div class="control-button" data-device="3">
+                <div class="power-icon">⏻</div>
+            </div>
+            <div class="control-button" data-device="4">
+                <div class="power-icon">⏻</div>
+            </div>
+        </div>
+
+        <!-- Sensor Panel -->
+        <div class="sensor-panel">
+            <div class="sensor-item">
+                <div class="sensor-icon">🌡️</div>
+                <div class="sensor-label">Temperature</div>
+                <div class="sensor-value" id="temperature">8°C</div>
+            </div>
+            <div class="sensor-divider"></div>
+            <div class="sensor-item">
+                <div class="sensor-icon">💧</div>
+                <div class="sensor-label">Humidity</div>
+                <div class="sensor-value" id="humidity">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
